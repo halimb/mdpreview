@@ -1,0 +1,24 @@
+{
+  "name": "mdpreviewer",
+  "version": "1.0.0",
+  "description": "fcc project: build a github style markdown previewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halimb/mdpreview.git"
+  },
+  "keywords": [
+    "markdown",
+    "previewer",
+    "freecodecamp"
+  ],
+  "author": "Abdel Halim Bouguedra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halimb/mdpreview/issues"
+  },
+  "homepage": "https://github.com/halimb/mdpreview#readme"
+}
