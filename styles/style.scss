@@ -1,1 +1,16 @@
+$bg: #fba;
+$primary: #742;
 
+
+
+.app {
+	height: 53vw;
+	width: 53vw;
+	position: absolute;
+	top: 0; right: 0;
+	bottom: 0; left: 0;
+	margin: auto;
+	text-align: center;
+	color: $bg;
+	background-color: $bg;
+}

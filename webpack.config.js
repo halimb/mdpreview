@@ -1,9 +1,9 @@
 module.exports = {
 	
-	entry: __dirname + "index.js",
+	entry: __dirname + "/index.js",
 	
 	output: {
-		file: "compiled_index.js",
+		filename: "compiled_index.js",
 		path: __dirname + "/build"
 	},
 
@@ -13,7 +13,7 @@ module.exports = {
 	},
 
 	module: {
-		laoders: [
+		loaders: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
@@ -22,7 +22,7 @@ module.exports = {
 
 			{
 				test: /\.scss$/,
-				laoder: "style-loader!sass-loader!postcss"
+				loader: "style-loader!css-loader!sass-loader!postcss-loader"
 			}
 		]
 	}
