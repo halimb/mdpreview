@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import marked from "marked";
 import { Input } from "./components/Input.js";
-import { Output } from "./components/Output.js"
+import { Output } from "./components/Output.js";
+import { placeholder } from "./placeholder.json";
 import "./styles/style.scss";
 
 class Panel extends React.Component {
@@ -19,10 +20,14 @@ class Panel extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<Input handleChange={this.handleChange}/>
+				<Input placeholder={placeholder} handleChange={this.handleChange}/>
 				<Output content={this.state.content}/>
 			</div>
 		)
+	}
+
+	componentDidMount() {
+		this.setState({content: marked(placeholder)});
 	}
 }
 
