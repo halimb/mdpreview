@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/halimb/mdpreview#readme",
   "dependencies": {
+    "ace-code-editor": "^1.2.3",
     "file-loader": "^0.11.2",
     "marked": "^0.3.6",
     "node-sass": "^4.5.3",
@@ -33,6 +34,7 @@
     "babel-loader": "^7.1.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "json-loader": "^0.5.7",
     "postcss": "^6.0.8",
     "postcss-loader": "^2.0.6",
     "precss": "^2.0.0",
