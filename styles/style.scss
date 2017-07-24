@@ -98,7 +98,7 @@ textarea::-webkit-scrollbar-track {
 
 textarea::-webkit-scrollbar-thumb{
 	background-color: #fff;
-	height: 6 * $barWidth;
+	height: 3 * $barWidth;
 }
 
 
@@ -113,5 +113,5 @@ textarea::-webkit-scrollbar-thumb{
 
 .output::-webkit-scrollbar-thumb{
 	background-color: #777;
-	height: 6 * $barWidth;
+	height: 3 * $barWidth;
 }
