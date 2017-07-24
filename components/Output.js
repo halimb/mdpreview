@@ -9,8 +9,12 @@ export class Output extends React.Component {
 	
 	render() {
 		return (
-				<div className="side output">
-					{this.props.content}
+				<div className="side">
+					<div className="label">OUTPUT</div>
+					<div className="output"
+						 dangerouslySetInnerHTML=
+						 	{{__html: this.props.content}}>
+					</div>
 				</div>
 			)
 	}

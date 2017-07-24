@@ -15,8 +15,11 @@ export class Input extends React.Component {
 
 	render() {
 		return (
-			<div className="side input">
-				<textarea onChange={this.handleChange}/>
+			<div className="side">
+				<div className="label">INPUT</div>
+				<div className="panel">
+					<textarea onChange={this.handleChange}/>
+				</div>
 			</div>);
 	}
 }
