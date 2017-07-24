@@ -33,18 +33,18 @@ body {
 .panel {
 	border: 2px solid black;
 	margin: 0 $a;
-	font-size: $a / 2;
+	font-size: 15px;
 }
 
 textarea {
 	color: $input !important;
 	padding: $a;
 	outline: none;
-	font-size: $a / 2;
+	font-size: 15px;
 	border: none;
 	width: 100%;
 	color: #333;
-	height: 80%;
+	height: 90%;
 	background-color: $primary;
 }
 
@@ -52,7 +52,7 @@ textarea {
 	@extend .panel;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	height: 80%;
+	height: 90%;
 	padding: 0 $a;
 	font-family: Arial;
 	word-wrap: break-word;
@@ -62,22 +62,56 @@ textarea {
 .label{
 	font-family: "Roboto";
 	display: inline-block;
-	margin: $a/2 $a;
+	margin: 0;
 	padding: 0 $a;
 	width: auto;
 	height: 2*$a;
 	line-height: 2 * $a;
 	color: white;
-	font-size: $a;
+	font-size: 20px;
 }
 
-@media screen and (max-width: 700px) {
+
+
+@media screen and (max-width: 800px) {
 	.container {
 		flex-direction: column;
-
+		height: 100vh;
 	}
 
 	.side {
+		height: 45%;
 		margin: $a 0;
 	}
+}
+
+$barWidth: 10px;
+
+textarea::-webkit-scrollbar {
+	width: $barWidth;
+}
+
+textarea::-webkit-scrollbar-track {
+	background-color: rgba(255,255,255,.2);
+    background-clip: content-box;  
+}
+
+textarea::-webkit-scrollbar-thumb{
+	background-color: #fff;
+	height: 6 * $barWidth;
+}
+
+
+.output::-webkit-scrollbar {
+	width: $barWidth;
+}
+
+.output::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,.2);
+    background-clip: content-box;  
+}
+
+.output::-webkit-scrollbar-thumb{
+	background-color: #777;
+	height: 6 * $barWidth;
 }
