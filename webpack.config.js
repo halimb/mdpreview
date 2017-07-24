@@ -21,6 +21,11 @@ module.exports = {
 			},
 
 			{
+				test: /\.ttf$/,
+				loader: "file-loader"
+			},
+
+			{
 				test: /\.scss$/,
 				loader: "style-loader!css-loader!sass-loader!postcss-loader"
 			},
