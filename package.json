@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
