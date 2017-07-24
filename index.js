@@ -5,7 +5,6 @@ import { Input } from "./components/Input.js";
 import { Output } from "./components/Output.js";
 import { placeholder } from "./placeholder.json";
 import "./styles/style.scss";
-import "./img/favicon.ico";
 
 class Panel extends React.Component {
 	constructor(props) {
