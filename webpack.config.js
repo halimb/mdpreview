@@ -36,10 +36,18 @@ module.exports = {
 			},
 
 			{
+				test: /\.ico$/,
+				loader: "file-loader",
+				query: {
+					limit: 1,
+					name: "[name].[ext]"
+				}
+			},
+
+			{
 				test: /\.json$/,
 				loader: "json-loader"
 			}
 		]
 	}
-
 }
