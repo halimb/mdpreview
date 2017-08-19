@@ -15,8 +15,8 @@ export class Input extends React.Component {
 
 	render() {
 		return (
-			<div className="side">
-				<div className="label">INPUT</div>
+			<div className="side input">
+				<div className="label ">INPUT</div>
 				<div className="panel">
 					<textarea defaultValue = {this.props.placeholder}
 							  onChange={this.handleChange} />
