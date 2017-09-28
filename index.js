@@ -20,7 +20,7 @@ class Panel extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<Input placeholder={placeholder} handleChange={this.handleChange}/>
+				<Input placeholder={placeholder} handleChange={this.handleChange} autofocus="autofocus"/>
 				<Output content={this.state.content}/>
 			</div>
 		)
