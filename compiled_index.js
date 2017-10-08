@@ -9793,7 +9793,7 @@ class Panel extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 		return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 			"div",
 			{ className: "container" },
-			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Input_js__["a" /* Input */], { placeholder: __WEBPACK_IMPORTED_MODULE_5__placeholder_json__["placeholder"], handleChange: this.handleChange }),
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Input_js__["a" /* Input */], { placeholder: __WEBPACK_IMPORTED_MODULE_5__placeholder_json__["placeholder"], handleChange: this.handleChange, autofocus: "autofocus" }),
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Output_js__["a" /* Output */], { content: this.state.content })
 		);
 	}
@@ -23785,8 +23785,8 @@ class Input extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "panel" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { defaultValue: this.props.placeholder,
-					onChange: this.handleChange })
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { id: "input", defaultValue: this.props.placeholder,
+					onChange: this.handleChange, autoFocus: true })
 			)
 		);
 	}
@@ -23873,7 +23873,7 @@ exports = module.exports = __webpack_require__(191)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: \"Roboto\";\n  src: url(" + __webpack_require__(192) + "); }\n\nbody {\n  background-color: #111;\n  background-repeat: repeat;\n  background-image: url(" + __webpack_require__(193) + "); }\n\n.container {\n  width: 100%;\n  height: 80%;\n  margin: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  text-align: center; }\n\n.side {\n  min-width: 50%;\n  height: 100%;\n  width: 100%; }\n\n.panel, .output {\n  margin: 0 4vw;\n  font-size: 15px;\n  text-align: left; }\n\ntextarea {\n  color: #fff !important;\n  padding: 2vw;\n  outline: none;\n  font-size: 15px;\n  border: none;\n  width: 100%;\n  color: #333;\n  height: 65vh;\n  background-color: #333; }\n\n.output {\n  overflow-y: scroll;\n  overflow-x: hidden;\n  height: 73vh;\n  padding: 0 2vw;\n  font-family: Arial;\n  word-wrap: break-word;\n  background-color: #fff; }\n\n.label {\n  font-family: \"Roboto\";\n  display: inline-block;\n  margin: 0;\n  padding: 0 2vw;\n  width: auto;\n  height: 4vw;\n  line-height: 4vw;\n  color: white;\n  font-size: 20px; }\n\n@media screen and (max-width: 800px) {\n  .container {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    height: 100vh; }\n  .side {\n    height: 45%;\n    margin: 2vw 0; } }\n\ntextarea::-webkit-scrollbar {\n  width: 10px; }\n\ntextarea::-webkit-scrollbar-track {\n  background-color: rgba(255, 255, 255, 0.2);\n  background-clip: content-box; }\n\ntextarea::-webkit-scrollbar-thumb {\n  background-color: #fff;\n  height: 30px; }\n\n.output::-webkit-scrollbar {\n  width: 10px; }\n\n.output::-webkit-scrollbar-track {\n  background-color: rgba(0, 0, 0, 0.2);\n  background-clip: content-box; }\n\n.output::-webkit-scrollbar-thumb {\n  background-color: #777;\n  height: 30px; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"Roboto\";\n  src: url(" + __webpack_require__(192) + "); }\n\nbody {\n  background-color: #111;\n  background-repeat: repeat;\n  background-image: url(" + __webpack_require__(193) + "); }\n\n.container {\n  width: 100%;\n  height: 80%;\n  margin: auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  text-align: center; }\n\n.side {\n  min-width: 50%;\n  height: 100%;\n  width: 100%; }\n\n.panel, .output {\n  margin: 0 4vw;\n  font-size: 13px;\n  text-align: left;\n  box-shadow: 2vw 2vw 2vw 0 rbga(0, 150, 255, 0.4);\n  border-radius: 4px; }\n\ntextarea {\n  color: #222;\n  padding: 2vw;\n  outline: none;\n  font-size: 12px;\n  border: none;\n  width: 100%;\n  height: 65vh;\n  border-radius: 4px;\n  background-color: #fff; }\n\n.output {\n  overflow-y: scroll;\n  overflow-x: hidden;\n  height: 73vh;\n  padding: 0 2vw;\n  font-family: Arial;\n  word-wrap: break-word;\n  background-color: #555;\n  color: #fff; }\n\n.label {\n  font-family: \"Roboto\";\n  display: inline-block;\n  margin: 0;\n  padding: 0 2vw;\n  width: auto;\n  height: 4vw;\n  line-height: 4vw;\n  color: white;\n  font-size: 20px; }\n\n@media screen and (max-width: 800px) {\n  .container {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    height: 100vh; }\n  .side {\n    height: 45%;\n    margin: 2vw 0; } }\n\n.output::-webkit-scrollbar {\n  width: 10px;\n  border-radius: 5px; }\n\n.output::-webkit-scrollbar-track {\n  background-color: rgba(255, 255, 255, 0.2);\n  background-clip: content-box; }\n\n.output::-webkit-scrollbar-thumb {\n  background-color: #fff;\n  height: 30px; }\n\ntextarea::-webkit-scrollbar {\n  width: 10px; }\n\ntextarea::-webkit-scrollbar-track {\n  background-color: rgba(0, 0, 0, 0.2);\n  background-clip: content-box; }\n\ntextarea::-webkit-scrollbar-thumb {\n  background-color: #777;\n  height: 30px; }\n", ""]);
 
 // exports
 
